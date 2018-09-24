@@ -26,7 +26,7 @@ var debugOn = false;
 	var methods = {
 		init : function(firstUri) {
 			context = this;
-			context.append('<div id="lodlogo" class="sprite"></div>');
+			context.append('<div id="lodlogo"></div>');
 			// inizializzo il contenitore delle variabili di ambiente
 			var storeIdsCleaner = $.jStorage.index();
 			for (var int = 0; int < storeIdsCleaner.length; int++) {

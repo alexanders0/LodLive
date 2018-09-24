@@ -33,13 +33,16 @@ body {
 }
 
 #lodlogo {
-	background-position: -785px -450px;
+	background-image: url(../img/applogo.png);
+	background-repeat: no-repeat;
+	background-size: 140px 60px;
+	/*background-position: -785px -450px;*/
 	position: fixed;
 	z-index: 0;
 	left: 60px;
 	top: 29px;
-	width: 97px;
-	height: 23px;
+	width: 130px;
+	height: 60px;
 }
 
 #controlPanel {

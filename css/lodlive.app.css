@@ -4,8 +4,10 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 div#logo {
-	background-position: -785px -400px;
-	height: 30px;
+	background-image: url(../img/applogo.png);
+	background-repeat: no-repeat;
+	background-size: 140px 60px;
+	height: 60px;
 	width: 200px;
 	clear: right;
 	margin: 20px 20px 20px 0;
@@ -33,7 +35,7 @@ div#startPanel {
 	float: left;
 	position: absolute;
 	left: 50%;
-	margin-left: -470px
+	margin-left: -470px;
 }
 
 .spriteHome {
@@ -394,7 +396,7 @@ div#boxesCont {
 	border-top: 1px solid #b1b1b1;
 	background: #dcdcdc;
 	width: 100%;
-	top: 890px;
+	top: 740px;
 	position: absolute;
 	padding-top: 15px;
 }
@@ -571,7 +573,10 @@ div.startBox.infoHome {
 }
 
 div.startBox.endpList {
-	background-position: -940px -990px;
+	/*background-position: -940px -990px;*/
+	background-image: url(../img/searchOnGraphView.png);
+	background-repeat: no-repeat;
+	/*background-size: 140px 60px;*/
 	color: #fff;
 	display: block;
 	cursor: auto;
@@ -612,7 +617,7 @@ div.startBox.endpList {
 	margin-top: 60px;
 }
 
-#boxO .info, #boxV .info, #boxB .info {
+#boxO .info, #boxB .info {
 	background-position: -640px -230px;
 }
 
@@ -625,7 +630,10 @@ div.startBox.endpList {
 }
 
 #boxV {
-	background-position: -10px -1300px;
+	background-position: -10px -0px;
+	background-image: url(../img/rdf_icon.png);
+	background-repeat: no-repeat;
+	background-size: 320px 300px;
 	color: #fff;
 	display: block;
 	cursor: auto;

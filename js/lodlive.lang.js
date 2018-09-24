@@ -76,7 +76,7 @@ $.jStorage.set('language', {
 		simpleSearchDescription : 'DBpedia.org and Freebase allow  their resources to be queried through keywords.<br/><br/>You will be able to find the URIs of the resources  you want to explore by choosing a dataset and typing at least three letters of a keyword for it.',
 		insertUri : 'insert URI',
 		insertUriDescription : 'LodLive is able to analyse and "show"  RDF resources even when they are  not supported by a SPARQL access EndPoint.<br/><br/>By entering any URI to an RDF resource,  you will be able to explore contents and relationships.',
-		insertData : 'browse your data',
+		insertData : 'browse your datazz',
 		centerClose : 'focus on the resource',
 		openOnline : 'access the online resource',
 		openRelated : 'expand related resources',

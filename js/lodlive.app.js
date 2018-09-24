@@ -282,7 +282,7 @@ $(function() {
 
 		orangeBox(firstLine, formTemplate);
 		blueBox(firstLine, formTemplate);
-		firstLine.append('<div class="startBox ' + spriteHome + '" id="boxV"><h1><span>' + lang('insertData') + '</span><span class="' + spriteHome + ' info"></span></h1></div>');
+		firstLine.append('<div class="startBox ' + spriteHome + '" id="boxV"></div>');
 
 		$('#menu').find('a[href^=#]').click(function() {
 			var text = $('<div class="text ' + spriteHome + '"><h3>' + $(this).text() + '</h3><div class="padding">' + $($(this).attr("href")).children('p').html() + '</div></div>');
