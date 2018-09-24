@@ -5,6 +5,18 @@ $.jStorage
                     // parametri di connessione agli endpoint
                     'connection' : {
                         // base degli about dei documenti non dell'ontologia
+                        'http://ld.utpl.edu.ec' : {
+                            description : {
+                                en : 'Linked Data of Universidad Técnica Particular de Loja'
+                            },
+
+                            useForInverseSameAs : true,
+                            endpoint : 'http://ld.utpl.edu.ec/sparql',
+                            examples : [ {
+                                uri : 'http://ld.utpl.edu.ec/cs2013/resource/KA:Computational_Science',
+                                label : 'CN - Computational Science'
+                            } ]
+                        },
                         'http://fr.dbpedia.org' : {
                             description : {
                                 fr : 'DBpédia en français est le chapitre francophone de DBpedia, il s\'inscrit dans l\'effort d\'internationalisation de DBpedia dont le but est de maintenir des données structurées extraites de différents chapitres de Wikipedia.',
