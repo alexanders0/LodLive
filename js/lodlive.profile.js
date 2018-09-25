@@ -33,6 +33,7 @@ $.jStorage
                                 inverseSameAs : 'SELECT DISTINCT * WHERE {?object <http://www.w3.org/2002/07/owl#sameAs> <{URI}>}'
                             },
                             endpoint : 'http://fr.dbpedia.org/sparql',
+                            image : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/DBpediaLogo.svg/263px-DBpediaLogo.svg.png",
                             examples : [ {
                                 uri : 'http://fr.dbpedia.org/resource/France',
                                 label : 'France'

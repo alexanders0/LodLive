@@ -5,9 +5,13 @@ $(function() {
 		spriteHome = 'spriteHomeEn';
 	} else if ($.jStorage.get('selectedLanguage') == 'fr') {
 		spriteHome = 'spriteHomeFr';
-	} else if ($.jStorage.get('selectedLanguage') == 'gl') {
+	} else if ($.jStorage.get('selectedLanguage') == 'it') {
+		spriteHome = 'spriteHome';
+	} else if ($.jStorage.get('selectedLanguage') == 'es') {
 		spriteHome = 'spriteHomeEn';
 	}
+
+	console.log($.jStorage.get('selectedLanguage'));
 
 	function myAlert(msg) {
 		var alert = $('<div class="myalert ' + spriteHome + '"><div>' + msg + '</div></div>');
@@ -88,8 +92,9 @@ $(function() {
 
 		$.each($.jStorage.get('profile').connection, function(key, value) {
 			var examples = value.examples;
+			var endpointImage = value.image; //added
 			// index++;
-			var aBox = $('<div class="startBox ' + spriteHome + '" rel="' + key + '"><h1><span>' + key.replace(/,.*/g, '').replace(/http:\/\//gi, '') + '</span><span class="' + spriteHome + ' info"></span></h1></div>');
+			var aBox = $('<div class="startBox ' + spriteHome + '" rel="' + key + '"><h1><span>' + key.replace(/,.*/g, '').replace(/http:\/\//gi, '') +  '</span><span class="' + spriteHome + ' info"></span></h1></div>');
 			$('#startPanel').children('#boxes').children('#boxesCont').append(aBox);
 			var descr = value.description[$.jStorage.get('selectedLanguage')];
 			if (!descr) {
@@ -117,7 +122,8 @@ $(function() {
 			form.bind('submit', function() {
 				var value = $(this).find('input[name=startFrom]').val();
 				if (value != '') {
-					document.location = '?' + $.trim(value);
+					// modified
+					document.location = '/graph.html?' + $.trim(value);
 				} else {
 					myAlert(lang('impostaUnaURI'));
 				}
@@ -261,6 +267,12 @@ $(function() {
 					});
 				}
 			});
+			//added
+			if (endpointImage != null) {
+				var abc = $('<img id="endpointImage" src="'+endpointImage+'"></div>');
+				form.append(abc);
+			}
+			//end added
 			var invia = $('<div class="inviaForm"></div>');
 			invia.click(function() {
 				form.submit();
@@ -335,7 +347,8 @@ $(function() {
 		form.bind('submit', function() {
 			var value = $(this).find('*[name=startFrom]').val();
 			if (value != '') {
-				document.location = '?' + $.trim(value);
+				// modified
+				document.location = '/graph.html?' + $.trim(value);
 			} else {
 				myAlert(lang('impostaUnaURI'));
 			}

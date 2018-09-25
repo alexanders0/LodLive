@@ -86,7 +86,7 @@ var debugOn = false;
 
 		},
 		close : function() {
-			document.location = document.location.href.substring(0, document.location.href.indexOf("?"));
+			document.location = document.location.href.substring(0, document.location.href.indexOf("/graph.html?"));
 		},
 		composeQuery : function(resource, module, testURI) {
 

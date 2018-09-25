@@ -3,6 +3,18 @@ input:focus, select:focus, textarea:focus, button:focus {
 	outline: none;
 }
 
+img#endpointImage {
+	/*width: 100px;
+	margin: auto;*/
+	position: absolute;
+
+	display: block;
+    margin: auto;
+    padding-top: 30px;
+    width: 15%;
+    margin-left: 60px;
+}
+
 div#logo {
 	background-image: url(../img/applogo.png);
 	background-repeat: no-repeat;
