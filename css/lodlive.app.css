@@ -4,15 +4,10 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 img#endpointImage {
-	/*width: 100px;
-	margin: auto;*/
-	position: absolute;
-
 	display: block;
     margin: auto;
     padding-top: 30px;
-    width: 15%;
-    margin-left: 60px;
+    width: 40%;
 }
 
 div#logo {

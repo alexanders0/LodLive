@@ -270,7 +270,7 @@ $(function() {
 			//added
 			if (endpointImage != null) {
 				var abc = $('<img id="endpointImage" src="'+endpointImage+'"></div>');
-				form.append(abc);
+				aBox.append(abc);
 			}
 			//end added
 			var invia = $('<div class="inviaForm"></div>');

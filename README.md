@@ -1,3 +1,3 @@
-# [GraphView]
+# GraphView
 
 Work in progress
