@@ -123,7 +123,7 @@ $(function() {
 				var value = $(this).find('input[name=startFrom]').val();
 				if (value != '') {
 					// modified
-					document.location = '/graph.html?' + $.trim(value);
+					document.location = '/lodlive/graph.html?' + $.trim(value);
 				} else {
 					myAlert(lang('impostaUnaURI'));
 				}
@@ -348,7 +348,7 @@ $(function() {
 			var value = $(this).find('*[name=startFrom]').val();
 			if (value != '') {
 				// modified
-				document.location = '/graph.html?' + $.trim(value);
+				document.location = '/lodlive/graph.html?' + $.trim(value);
 			} else {
 				myAlert(lang('impostaUnaURI'));
 			}
