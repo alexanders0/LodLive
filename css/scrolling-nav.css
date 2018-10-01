@@ -25,7 +25,10 @@ section#services {
     height: 720px;
   }
   div.hideSecction {
-    visibility: hidden;
+    display: none;
+  }
+  div#nextPage, div#prevPage {
+    display: none;
   }
 }
 
@@ -33,6 +36,9 @@ section#services {
 @media (max-width: 767px) {
   section#services {
     height: 1000px;
+  }
+  div#boxesCont {
+    width: 100px;
   }
 }
 
