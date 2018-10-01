@@ -86,7 +86,7 @@ var debugOn = false;
 
 		},
 		close : function() {
-			document.location = document.location.href.substring(0, document.location.href.indexOf("/lodlive/graph.html?"));
+			document.location = document.location.href.substring(0, document.location.href.length); //modified to restart url
 		},
 		composeQuery : function(resource, module, testURI) {
 
