@@ -39,6 +39,7 @@ div#lang a {
 
 div#startPanel {
 	width: 930px;
+	/*width: 100%;*/
 	float: left;
 	position: absolute;
 	left: 50%;
@@ -68,7 +69,8 @@ div.startBox {
 }
 
 div#boxes {
-	width: 920px;
+	/*width: 920px;*/
+	width: 100%;
 	overflow: hidden;
 	float: left;
 	height: 610px
@@ -78,6 +80,7 @@ div#firstLineBoxes {
 	float: left;
 	height: 310px;
 	width: 930px;
+	/*width: 100%;*/
 }
 
 div#boxesCont {

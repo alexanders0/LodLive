@@ -8,9 +8,49 @@ header {
   padding: 154px 0 100px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: @screen-md-min) {
   header {
     padding: 156px 0 100px;
+  }
+}
+
+section#services {
+  /*height: 470px;*/
+  height: 750px;
+}
+
+/* media screen */
+@media (max-width: 1200px) {
+  section#services {
+    height: 720px;
+  }
+  div.hideSecction {
+    visibility: hidden;
+  }
+}
+
+/* small screen */
+@media (max-width: 767px) {
+  section#services {
+    height: 1000px;
+  }
+}
+
+@media (max-width: 575px) {
+  div.hola {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  div.hola {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 350px) {
+  div.hola {
+    padding-left: 25px;
   }
 }
 
@@ -22,10 +62,6 @@ img.logo-header {
   width: 100px;
 }
 
-section#services {
-	height: 760px;
-}
-
 section#services{
 	padding-top: 75px;
 }
@@ -33,4 +69,10 @@ section#services{
 section#about, section#contact {
 	padding-top: 75px;
 	padding-bottom: 75px; 
+}
+
+/*div.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
