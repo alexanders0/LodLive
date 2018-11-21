@@ -21,37 +21,6 @@
       window.jQuery || document.write('<script src="js/jquery-2.0.3.min.js"><\/script>')
     </script>
 
-    <!-- <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-1940652-20']);
-      _gaq.push(['_setDomainName', 'lodlive.it']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-    </script> -->
-
-<!--     <script type="text/javascript">
-      WebFontConfig = {
-        google : {
-          families : ['Open+Sans:400italic,700italic,800italic,300italic,600italic,400,300,600,800,700:latin']
-        }
-      };
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })();
-    </script> -->
     <script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
 
     <link rel="shortcut icon" href="img/utplicon.png" />
@@ -77,9 +46,9 @@
     <script type="text/javascript" src="js/lodlive.utils.js?01"></script>
     <script type="text/javascript" src="js/lodlive.custom-lines.js?01"></script>
     <script type="text/javascript" src="js/lodlive.app.js?01"></script>
-    <script type="text/javascript">
+<!--     <script type="text/javascript">
       $.jStorage.set('selectedLanguage', 'en')
-    </script>
+    </script> -->
     <!-- end links added -->
 
   </head>
@@ -96,24 +65,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Acerca de</a>
+              <a class="nav-link js-scroll-trigger" href="#about" id="about1"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Visualizar RDF</a>
+              <a class="nav-link js-scroll-trigger" href="#services" id="vRDF"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" id="cont"></a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Idioma
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="index.html">English</a>
-                <a class="dropdown-item" href="app_es.html">Español</a>
-                <a class="dropdown-item" href="app_fr.html">Français</a>
-                <a class="dropdown-item" href="app_it.html">Italiano</a>
+                <a class="dropdown-item" href="/" onclick="setLangEn()">English</a>
+                <a class="dropdown-item" href="/" onclick="setLangEs()">Español</a>
+                <a class="dropdown-item" href="/" onclick="setLangFr()">Français</a>
+                <a class="dropdown-item" href="/" onclick="setLangIt()">Italiano</a>
               </div>
             </li>
 
@@ -124,8 +91,8 @@
 
     <header class="bg-primary text-white">
       <div class="container text-center">
-        <h1>Welcome to Scrolling Nav</h1>
-        <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+        <h1 id="welcome">Welcome to GraphView</h1>
+        <p class="lead" id="intro">Visualize information from several data domains through graphs</p>
       </div>
     </header>
 
@@ -133,14 +100,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>About this page</h2>
-            <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-            <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-            </ul>
+            <h2 id="about2"></h2>
+            <p class="lead" id="aboutText"></p>
           </div>
         </div>
       </div>
@@ -150,7 +111,7 @@
       <div class="container hola">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-				<div class="row">
+				    <div class="row">
 		      		<div id="firstLineBoxes"></div>
 		      	</div>
 		      	<div class="row hideSecction">
@@ -163,7 +124,6 @@
 		      		</div>
 		      	</div>
           </div>
-
         </div>
       </div>
     </section>
@@ -172,8 +132,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact us</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            <h2 id="cont1">Contact us</h2>
+            <p class="lead" id="contactText"></p>
           </div>
         </div>
       </div>
@@ -218,6 +178,45 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
+    <script type="text/javascript">
+      var lngSel = $.jStorage.get('selectedLanguage');
+      var about = $.jStorage.get('language')[lngSel].about;
+      var vRDF = $.jStorage.get('language')[lngSel].vRDF;
+      var contact = $.jStorage.get('language')[lngSel].contact;
+      var language = $.jStorage.get('language')[lngSel].language;
+      var welcome = $.jStorage.get('language')[lngSel].welcome;
+      var intro = $.jStorage.get('language')[lngSel].intro;
+      var aboutText = $.jStorage.get('language')[lngSel].aboutText;
+      var contactText = $.jStorage.get('language')[lngSel].contactText;
+
+      document.getElementById("about1").innerHTML = about;
+      document.getElementById("about2").innerHTML = about;
+      document.getElementById("vRDF").innerHTML = vRDF;
+      document.getElementById("cont").innerHTML = contact;
+      document.getElementById("cont1").innerHTML = contact;
+      document.getElementById("navbarDropdownPortfolio").innerHTML = language;
+      document.getElementById("welcome").innerHTML = welcome;
+      document.getElementById("intro").innerHTML = intro;
+      document.getElementById("aboutText").innerHTML = aboutText;
+      document.getElementById("contactText").innerHTML = contactText;
+
+      function setLangEn() {
+        $.jStorage.set('selectedLanguage', 'en')
+      }
+
+      function setLangEs() {
+        $.jStorage.set('selectedLanguage', 'es')
+      }
+
+      function setLangFr() {
+        $.jStorage.set('selectedLanguage', 'fr')
+      }
+
+      function setLangIt() {
+        $.jStorage.set('selectedLanguage', 'it')
+      }
+
+    </script>
 
   </body>
 

@@ -88,6 +88,7 @@
 		<script type="text/javascript" src="js/lodlive.app.js?01"></script>
 		<script type="text/javascript">
 			$.jStorage.set('selectedLanguage', $.jStorage.get('selectedLanguage'))
+			var lngSel = $.jStorage.get('selectedLanguage')
 		</script>
 	</head>
 	<body>
@@ -237,37 +238,92 @@
 					<h2>SYMBOL LEGEND</h2>
 					<ul class="optionsList legend">
 						<li>
-							<span class="spriteLegenda"></span>tools
+							<span class="spriteLegenda"></span>
+							<p id="tools"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].tools;
+								document.getElementById("tools").innerHTML = x;
+							</script>
 						</li>
 						<li>
-							<span class="spriteLegenda"></span>view additional information
+							<span class="spriteLegenda"></span>
+							<p id="vaInformation"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].vaInformation;
+								document.getElementById("vaInformation").innerHTML = x;
+							</script>
 						</li>
 						<li>
-							<span class="spriteLegenda"></span>close circle
+							<span class="spriteLegenda"></span>
+							<p id="cCircle"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].cCircle;
+								document.getElementById("cCircle").innerHTML = x;
+							</script>
 						</li>
 						<li>
-							<span class="spriteLegenda"></span>focus on circle
+							<span class="spriteLegenda"></span>
+							<p id="foCircle"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].foCircle;
+								document.getElementById("foCircle").innerHTML = x;
+							</script>
 						</li>
 						<li>
-							<span class="spriteLegenda"></span>open resource URI
+							<span class="spriteLegenda"></span>
+							<p id="orURI"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].orURI;
+								document.getElementById("orURI").innerHTML = x;
+							</script>
 						</li>
 						<li>
-							<span class="spriteLegenda"></span>expand all visible relations
+							<span class="spriteLegenda"></span>
+							<p id="eavRelations"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].eavRelations;
+								document.getElementById("eavRelations").innerHTML = x;
+							</script>
 						</li>
 						<li>
-							<span class="spriteLegenda"></span>direct relation
+							<span class="spriteLegenda"></span>
+							<p id="dRelation"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].dRelation;
+								document.getElementById("dRelation").innerHTML = x;
+							</script>
 						</li>
 						<li>
-							<span class="spriteLegenda"></span>group of direct relations
+							<span class="spriteLegenda"></span>
+							<p id="godRelations"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].godRelations;
+								document.getElementById("godRelations").innerHTML = x;
+							</script>
 						</li>
 						<li>
-							<span class="spriteLegenda"></span>inverse relation
+							<span class="spriteLegenda"></span>
+							<p id="iRelation"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].iRelation;
+								document.getElementById("iRelation").innerHTML = x;
+							</script>
 						</li>
 						<li>
-							<span class="spriteLegenda"></span>group of inverse relations
+							<span class="spriteLegenda"></span>
+							<p id="goiRelations"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].goiRelations;
+								document.getElementById("goiRelations").innerHTML = x;
+							</script>
 						</li>
 						<li>
-							<span class="spriteLegenda"></span>owl:sameAs relation
+							<span class="spriteLegenda"></span>
+							<p id="owlsRelation"></p>
+							<script type="text/javascript">
+								var x = $.jStorage.get('language')[lngSel].owlsRelation;
+								document.getElementById("owlsRelation").innerHTML = x;
+							</script>
 						</li>
 					</ul>
 				</div>

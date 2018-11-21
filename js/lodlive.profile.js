@@ -15,6 +15,9 @@ $.jStorage
                             examples : [ {
                                 uri : 'http://ld.utpl.edu.ec/cs2013/resource/KA:Computational_Science',
                                 label : 'CN - Computational Science'
+                            }, {
+                                uri : 'http://ld.utpl.edu.ec/ipers/resource/Person/Bernardo_Valdivieso',
+                                label : 'Historical Figures of Loja'
                             } ]
                         },
                         'http://fr.dbpedia.org' : {
