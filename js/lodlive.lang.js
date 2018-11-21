@@ -324,7 +324,7 @@ $.jStorage.set('language', {
 		contact: "Contacto",
 		language: "Idioma",
 		welcome: "Bienvenido en GraphView",
-		intro: "Visualiza información de varios dominios de datos a través de gráficos",
+		intro: "Visualiza información de varios dominios de datos a través de grafos",
 		aboutText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.",
 		contactText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam."
 	}
