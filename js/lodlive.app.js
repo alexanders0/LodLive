@@ -457,7 +457,7 @@ $(function() {
 				var ele = $(this);
 				var jEndpoints = $('<div class="selectionList"></div>');
 				jEndpoints.append('<div class="selectEle" rel="dbpedia"><span>dbpedia.org</span></div>');
-				jEndpoints.append('<div class="selectEle" rel="freebase"><span>freebase.com</span></div>');
+				// jEndpoints.append('<div class="selectEle" rel="freebase"><span>freebase.com</span></div>');
 				jEndpoints.hover(function() {
 				}, function() {
 					ele.click();
